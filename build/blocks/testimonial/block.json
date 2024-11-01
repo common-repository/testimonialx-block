@@ -1,0 +1,101 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "ultradevs/testimonial",
+  "version": "0.1.0",
+  "title": "Testimonial",
+  "category": "testimonial",
+  "icon": "testimonial",
+  "description": "Testimonial Block",
+  "supports": {
+    "html": false,
+    "align": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "John Doe"
+    },
+    "designation": {
+      "type": "string",
+      "default": "CEO, Company Name"
+    },
+    "description": {
+      "type": "string",
+      "default": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas temporibus repudiandae culpa fugit et quibusdam voluptatibus magnam pariatur maxime nemo, ipsa maiores in necessitatibus impedit mollitia possimus? Cupiditate, natus fugiat! Cumque, enim consequatur ducimus nihil tempora blanditiis non iste voluptatum nulla reiciendis"
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "url": "",
+        "title": "John Doe",
+        "alt": "John Doe",
+        "height": 100,
+        "width": 100,
+        "borderRadius": 100,
+        "objectFit": "cover"
+      }
+    },
+    "pubDateTime": {
+      "type": "string",
+      "default": "21 June 2023 - 12:00 PM"
+    },
+    "rating": {
+      "type": "number",
+      "default": 5
+    },
+    "ratingColor": {
+      "type": "string",
+      "default": "#F0AD4E"
+    },
+    "ratingScale": {
+      "type": "number",
+      "default": 5
+    },
+    "ratingSize": {
+      "type": "number",
+      "default": 20
+    },
+    "txtColor": {
+      "type": "string",
+      "default": "#111"
+    },
+    "hoverTxtColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "bgColor": {
+      "type": "string",
+      "default": ""
+    },
+    "hoverBGColor": {
+      "type": "string",
+      "default": ""
+    },
+    "nameColor": {
+      "type": "string",
+      "default": "#111"
+    },
+    "hoverNameColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "designationColor": {
+      "type": "string",
+      "default": "#111"
+    },
+    "hoverDesignationColor": {
+      "type": "string",
+      "default": "#fff"
+    }
+  },
+  "example": {
+    "attributes": {
+      "name": "John Doe"
+    }
+  },
+  "textdomain": "testimonial",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
